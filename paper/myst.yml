@@ -1,0 +1,49 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  # id: ubcgif-YEAR-AUTHORS-JOURNAL
+  # title: TITLE OF PAPER
+  # description: SHORT DESCRIPTION HERE
+  authors:
+    # - name: AUTHOR 1
+    #   email: EMAIL
+    #   corresponding: true
+    #   orcid: ORCID
+    #   affiliation:
+    #     id: ubc
+    #     name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
+    # - name: Lindsey J. Heagy
+    #   email: lheagy@eoas.ubc.ca
+    #   corresponding: true
+    #   orcid: 0000-0002-1551-5926
+    #   affiliation: ubc
+  # doi: DOI
+  # arxiv: ARXIV
+  # github: GITHUB-URL
+  # date: YYYY/MM/DD # date of publication
+  # license: CC-BY-4.0  # uncomment this and the line below if open access
+  # open_access: true
+  venue:
+    # title: JOURNAL NAME
+    # url: JOURNAL URL
+  history:
+    # received: YYYY/MM/DD
+    # accepted: YYYY/MM/DD
+    # published: YYYY/MM/DD
+  keywords:
+    # - KEYWORD 1
+    # - KEYWORD 2
+    # - KEYWORD 3
+    # - KEYWORD 4
+  abbreviations:
+    # CSEM: controlled source electromagnetics
+    # EM: electromagnetics
+  thumbnail: thumbnail.png
+  numbering:
+    headings: true
+site:
+  template: article-theme
+  actions:
+    - title: pdf
+      # url: NAME-OF-PDF.pdf
+      static: true
