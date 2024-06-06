@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  # id: ubcgif-YEAR-AUTHORS-JOURNAL
+  id: ubcgif-2020-fournier-etal-geophysics
   # title: TITLE OF PAPER
   # description: SHORT DESCRIPTION HERE
   authors:
