@@ -31,18 +31,18 @@
 % \begin{center}
 % {\LARGE\textbf{Sparse magnetic vector inversion in spherical coordinates}}
 %\maketitle{}
-% 
+%
 % \author{Dominique Fournier\footnotemark[1], Lindsey J. Heagy\footnotemark[2] and Douglas W. Oldenburg\footnotemark[1]}
 % {Dominique Fournier$^1$, Lindsey J. Heagy$^2$ and Douglas W. Oldenburg$^1$
-% 
+%
 % \vspace{10 mm}
 % Right Running Head: Sparse magnetic vector inversion
 % \vspace{10 mm}
-% 
-% 
+%
+%
 % $^1$ Geophysical Inversion Facility, Department of Earth, Ocean, and Atmospheric Sciences,
 % University of British Columbia, Canada. E-mail: dfournie@eoas.ubc.ca, doug@eoas.ubc.ca
-% 
+%
 % $^2$ Department of Statistics, the University of California, Berkeley, California. E-mail: lheady@berkeley.edu
 % }
 % \end{center}
@@ -551,16 +551,19 @@ Figure \ref{Kevitsa_Geology}a presents a simplified geological map of the Kevits
 \label{Kevitsa_Geology}
 \end{figure}
 
-\begin{table}
-\caption{Intervals along boreholes KV200 and KV297 reporting significant remanent magnetization.}
-\label{Table1}
-\end{table}
+% \begin{table}
+\input{Tables/Table1}
+% \caption{Intervals along boreholes KV200 and KV297 reporting significant remanent magnetization.}
+% \label{Table1}
+% \end{table}
 
 The Ni-Cu-PGE mineralization is hosted in a funnel shaped ultramafic olivine pyroxenite (UPXO) unit, bordered to the south-west by a gabbro (IGB) unit. The intrusion is hosted in a layered sequence of mafic volcanic (MVS) to intermediate volcanic (VIO) and carbonaceous phyllites (MPH) units. This sequence is interbedded with discontinuous layers of arkose (ARK), arenite (ARN), and felsic volcanic (FVS) units.
 
 It is believed that the disseminated sulphide mineralization within the UPXO unit may have precipitated from the dissolution of Proterozoic Ni-Cu-PGE rich MPH units and sulfur rich evaporates \cite[]{Mutanen1997}. From seismic reflection surveys and borehole data, \cite{Koivisto2015} identified geological contacts at a depth $>1$ km that defines the base of the intrusion (Figure~\ref{Kevitsa_Geology}b).
 A large dunite (UDU) block is located in the center of the intrusion. Thick lenses of dunite below the base of the Kevitsa intrusion were identified, as well as a vertical unit between the IGB and UPXO units. While the extent and geometry of these UDU units are not well understood, we expect the dunite be serpentinized and hence highly magnetic.
 Table~\ref{Table2} provides a relative ranking of expected magnetization strength based upon the compilation of 105,000 susceptibility readings made on cores from 279 boreholes. Figure~\ref{Kevitsa_PhysProp} summarizes the susceptibility measurements grouped by lithologies.
+
+\input{Tables/Table2}
 
 \begin{figure}[p!]
 \includegraphics[width=\columnwidth]{Figures/Figure9.png}
@@ -621,14 +624,14 @@ Horizontal and vertical sections through the recovered nine magnetization models
 \caption{Horizontal sections at $\approx$ 300 m below topography for a suite of models using various sparsity assumptions put on the amplitude of magnetization for $p_s\;, p_{x,y,z} \in [0,\: 2]$. Norm measure on the magnetization angle are fixed to $p_{x,y,z}=0$ in order to promote uniform magnetization direction.}
 \label{MVIS_Hsections}
 \end{figure}
-	
+
 \begin{figure}[p!]
 \includegraphics[width=\columnwidth]{Figures/Figure13.png}
 \caption{Vertical sections along the E5 seismic reflection line for a suite of models using various sparsity assumptions put on the amplitude of magnetization for $p_s\;, p_{x,y,z} \in [0,\: 2]$. Norm measure on the magnetization angle are fixed to $p_{x,y,z}=0$ in order to promote uniform magnetization direction.}
 \label{MVIS_Vsections}
 \end{figure}
 
-To simplify the analysis, we superimpose the $90^{th}$ percentile iso-value of amplitude for each of the nine models (Figure~\ref{MVIS_Vsections}). We calculate an average magnetization direction (white) and standard deviation on the angle (red). We observe the following:	
+To simplify the analysis, we superimpose the $90^{th}$ percentile iso-value of amplitude for each of the nine models (Figure~\ref{MVIS_Vsections}). We calculate an average magnetization direction (white) and standard deviation on the angle (red). We observe the following:
 
 \begin{itemize}
 \item Parts of the central dunite (UDU) unit appear to be reversely magnetized $[\kappa_{e} = 0.09\;SI, \;I=-52^\circ \pm 15^\circ, \;D=246^\circ \pm 5^\circ]$. The recovered inclination in the model cells nearest to the published results from \cite{Montonen2012} agree well.
