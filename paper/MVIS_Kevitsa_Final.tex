@@ -28,26 +28,26 @@
 % --- Geophysics: ---
 \title{Sparse magnetic vector inversion in spherical coordinates}
 
-\begin{center}
-{\LARGE\textbf{Sparse magnetic vector inversion in spherical coordinates}}
+% \begin{center}
+% {\LARGE\textbf{Sparse magnetic vector inversion in spherical coordinates}}
 %\maketitle{}
+% 
+% \author{Dominique Fournier\footnotemark[1], Lindsey J. Heagy\footnotemark[2] and Douglas W. Oldenburg\footnotemark[1]}
+% {Dominique Fournier$^1$, Lindsey J. Heagy$^2$ and Douglas W. Oldenburg$^1$
+% 
+% \vspace{10 mm}
+% Right Running Head: Sparse magnetic vector inversion
+% \vspace{10 mm}
+% 
+% 
+% $^1$ Geophysical Inversion Facility, Department of Earth, Ocean, and Atmospheric Sciences,
+% University of British Columbia, Canada. E-mail: dfournie@eoas.ubc.ca, doug@eoas.ubc.ca
+% 
+% $^2$ Department of Statistics, the University of California, Berkeley, California. E-mail: lheady@berkeley.edu
+% }
+% \end{center}
 
-\author{Dominique Fournier\footnotemark[1], Lindsey J. Heagy\footnotemark[2] and Douglas W. Oldenburg\footnotemark[1]}
-{Dominique Fournier$^1$, Lindsey J. Heagy$^2$ and Douglas W. Oldenburg$^1$
-
-\vspace{10 mm}
-Right Running Head: Sparse magnetic vector inversion
-\vspace{10 mm}
-
-
-$^1$ Geophysical Inversion Facility, Department of Earth, Ocean, and Atmospheric Sciences,
-University of British Columbia, Canada. E-mail: dfournie@eoas.ubc.ca, doug@eoas.ubc.ca
-
-$^2$ Department of Statistics, the University of California, Berkeley, California. E-mail: lheady@berkeley.edu
-}
-\end{center}
-
-\righthead{Sparse magnetic vector inversion}
+% \righthead{Sparse magnetic vector inversion}
 
 
 \begin{abstract}
@@ -256,11 +256,11 @@ Re-writing the discrete system in equation 18 in terms of three orthogonal compo
 \begin{split}
 \mathbf{d}^{pre} &= \mathbf{F}_{e} \boldsymbol{\kappa}_e \\
 &= [ \mathbf{F}_u \: \mathbf{F}_v \: \mathbf{F}_w]
-\begin{bsmallmatrix}
+\begin{matrix}
 \boldsymbol{\kappa}_{u}\\
 \boldsymbol{\kappa}_{v}\\
 \boldsymbol{\kappa}_{w}
-\end{bsmallmatrix} \\
+\end{matrix} \\
 \mathbf{F}_u,\; &\mathbf{F}_v, \;\mathbf{F}_w \in \mathbb{R}^{N \times M} \;,
 \end{split}
 \end{equation}
@@ -332,10 +332,10 @@ which we can express in matrix form as
 \mathbf{F}_C\;\mathbf{m}_C &= \mathbf{d}^{obs} \;,\\
 \mathbf{F}_C = [1\;2], \;
 \mathbf{m}_C &=
-\begin{bsmallmatrix}
+\begin{matrix}
 x\\
 y
-\end{bsmallmatrix}, \;
+\end{matrix}, \;
 \mathbf{d}^{obs} = 1
 \end{split}
 \end{equation}

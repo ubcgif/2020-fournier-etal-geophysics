@@ -2,42 +2,45 @@
 version: 1
 project:
   id: ubcgif-2020-fournier-etal-geophysics
-  # title: TITLE OF PAPER
-  # description: SHORT DESCRIPTION HERE
+  title: Sparse magnetic vector inversion in spherical coordinates
+  description: Determining the enhanced capabilities of our algorithm on a large airborne magnetic survey collected over the Kevitsa Ni-Cu-platinum group elements (PGE) deposit
   authors:
-    # - name: AUTHOR 1
-    #   email: EMAIL
-    #   corresponding: true
-    #   orcid: ORCID
-    #   affiliation:
-    #     id: ubc
-    #     name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
-    # - name: Lindsey J. Heagy
-    #   email: lheagy@eoas.ubc.ca
-    #   corresponding: true
-    #   orcid: 0000-0002-1551-5926
-    #   affiliation: ubc
-  # doi: DOI
+    - name: Dominique Fournier
+      email: dfournie@eoas.ubc.ca
+      corresponding: true
+      orcid: 0000-0003-3285-3465
+      affiliation:
+        id: ubc
+        name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
+    - name: Lindsey J. Heagy
+      email: lheagy@eoas.ubc.ca
+      orcid: 0000-0002-1551-5926
+      affiliation: ubc
+    - name: Douglas W. Oldenburg
+      email: doug@eoas.ubc.ca
+      orcid: 0000-0002-4327-2124
+      affiliation: ubc
+  doi: 10.1190/geo2019-0244.1
   # arxiv: ARXIV
   # github: GITHUB-URL
-  # date: YYYY/MM/DD # date of publication
+  date: 2020/03/19 # date of publication
   # license: CC-BY-4.0  # uncomment this and the line below if open access
   # open_access: true
   venue:
-    # title: JOURNAL NAME
-    # url: JOURNAL URL
+    title: Geophysics
+    url: https://library.seg.org/doi/10.1190/geo2019-0244.1
   history:
-    # received: YYYY/MM/DD
-    # accepted: YYYY/MM/DD
-    # published: YYYY/MM/DD
+    received: 2019/04/24
+    accepted: 2020/01/11
+    published: 2020/03/19
   keywords:
-    # - KEYWORD 1
-    # - KEYWORD 2
-    # - KEYWORD 3
-    # - KEYWORD 4
+    - 3D
+    - inversion
+    - magnetization
+    - nonlinear
   abbreviations:
-    # CSEM: controlled source electromagnetics
-    # EM: electromagnetics
+    MVI: Magnetic vector inversion
+    S-IRLS: scaleD iteratively reweighted least-square
   thumbnail: thumbnail.png
   numbering:
     headings: true
@@ -45,5 +48,5 @@ site:
   template: article-theme
   actions:
     - title: pdf
-      # url: NAME-OF-PDF.pdf
+      url: fournier-etal-2020-geophysics.pdf
       static: true
