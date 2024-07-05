@@ -4,9 +4,9 @@
 \usepackage{amsfonts}
 \usepackage{multirow}
 \usepackage{mathtools}
+\usepackage[table]{xcolor}
 
-\usepackage{xcolor}
-\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+\newcommand{\crule}[3][black]{\textcolor{#1}{\rule{#2}{#3}}} % Define the \crule command
 \renewcommand{\arraystretch}{0.5}
 
 \definecolor{BXH}{RGB}{208, 140, 212}
@@ -34,11 +34,12 @@
 
 \begin{document}
 
-\begin{table}
-\begin{tabular}{|c | c| l | c |}\hline
-& Code & Description & Susceptibility \\ \hline
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|l|c|}\hline
+ & Code & Description & Susceptibility \\ \hline
 \crule[OVB]{0.25cm}{0.25cm} & OVB & Overburden & Medium \\ \hline
-\crule[IGB]{0.25cm}{0.25cm}& IGB &
+\crule[IGB]{0.25cm}{0.25cm} & IGB &
 \begin{tabular}{l}
 IGB: Gabbro \\
 IPG: Pegmatite \\
