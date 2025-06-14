@@ -1,99 +1,186 @@
+% \documentclass[paper]{geophysics}
+% \usepackage{graphicx}
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{multirow}
+% \usepackage{mathtools}
+% \usepackage[table]{xcolor}
+
+% \newcommand{\crule}[3][black]{\textcolor{#1}{\rule{#2}{#3}}} % Define the \crule command
+% \renewcommand{\arraystretch}{0.5}
+
+% \definecolor{BXH}{RGB}{208, 140, 212}
+% \definecolor{BXHC}{RGB}{218, 150, 222}
+% \definecolor{UDU}{RGB}{230, 230, 230}
+% \definecolor{IGB}{RGB}{200, 200, 200}
+% \definecolor{IGP}{RGB}{128, 0, 128}
+% \definecolor{IGBM}{RGB}{170, 170, 170}
+% \definecolor{UPX}{RGB}{140, 140, 140}
+% \definecolor{UPXO}{RGB}{140, 140, 140}
+% \definecolor{UKO}{RGB}{176, 245, 184}
+% \definecolor{VTU}{RGB}{0, 160, 18}
+% \definecolor{MVO}{RGB}{0, 120, 0}
+% \definecolor{VBA}{RGB}{0, 90, 0}
+% \definecolor{VMO}{RGB}{0, 120, 0}
+% \definecolor{VFO}{RGB}{178, 255, 104}
+% \definecolor{SAK}{RGB}{255, 174, 0}
+% \definecolor{SAN}{RGB}{255, 225, 140}
+% \definecolor{MSC}{RGB}{150, 140, 140}
+% \definecolor{MPHB}{RGB}{110, 190, 255}
+% \definecolor{MPH}{RGB}{139, 241, 255}
+% \definecolor{SOO}{RGB}{139, 241, 255}
+% \definecolor{VOO}{RGB}{0, 200, 0}
+% \definecolor{OVB}{RGB}{255, 255, 0}
+
+% \begin{document}
+
+% \begin{table}[h]
+% \centering
+% \begin{tabular}{|c|c|l|c|}\hline
+%  & Code & Description & Susceptibility \\ \hline
+% \crule[OVB]{0.25cm}{0.25cm} & OVB & Overburden & Medium \\ \hline
+% \crule[IGB]{0.25cm}{0.25cm} & IGB &
+% \begin{tabular}{l}
+% IGB: Gabbro \\
+% IPG: Pegmatite \\
+% IGBO: Olivine gabbro\\
+% IDI: Diorite \\
+% IDB: Diabase \\
+% IMO: Intrusive (mafic)\\
+% IGBM: Magnetite gabbro
+% \end{tabular} & \begin{tabular}{c} \\ Medium \\ \\ \\ \\ \\ \hline High \end{tabular} \\ \hline
+% \crule[UPX]{0.25cm}{0.25cm}& UPX &
+% \begin{tabular}{l}
+% UPXO: Olivine peroxinite \\
+% UOO: Ultramafic (Undiff.)\\
+% MPE: Metaperidotite \\
+% UWB: Websterite \\
+% \end{tabular} & Medium \\ \hline
+% \crule[UDU]{0.25cm}{0.25cm}& UDU &
+% \begin{tabular}{l}
+% UDU: Dunite \\
+% UPE: Peridotite \\
+% \end{tabular} & High \\ \hline
+% \crule[UKO]{0.25cm}{0.25cm} & UKO & Komatiite & High \\ \hline
+% \crule[BXH]{0.25cm}{0.25cm} & BXH & \begin{tabular}{l}BXO (undiff.) \\ BXHC: Hydrothermal (crackle)\end{tabular} & Medium \\ \hline
+% \crule[SOO]{0.25cm}{0.25cm}& SOO &
+% \begin{tabular}{l}
+% MAB: Albitite \\
+% MAM: Amphibolite\\
+% MQZ: Quartzite \\
+% MSCSD: Schist \\
+% \end{tabular} & Low \\ \hline
+% \crule[MPHB]{0.25cm}{0.25cm}& MPH &
+% \begin{tabular}{l}
+% MPH: Phyllite \\
+% MPHB: Black Phyllite \\
+% MSCBK: Black Schist \\
+% MHF: Hornfels \\
+% \end{tabular} & Low \\ \hline
+% \crule[VMO]{0.25cm}{0.25cm}& MVS &
+% \begin{tabular}{l}
+% VMO: Volcanic Mafic \\
+% VBA: Basalt\\
+% VTUM: Volcanic tuff \\
+% \end{tabular} & Low \\ \hline
+% \crule[VOO]{0.25cm}{0.25cm}& VIO &
+% \begin{tabular}{l}
+% VIO: Volcanic Intermediate \\
+% VTUI: Volcanic tuff \\
+% VAN: Andesite \\
+% VOO: Volcanic (undiff.) \\
+% \end{tabular} & Medium \\ \hline
+% \end{tabular}
+% \end{table}
+
+
+% \end{document}
+
+
 \documentclass[paper]{geophysics}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{multirow}
 \usepackage{mathtools}
-\usepackage[table]{xcolor}
-
-\newcommand{\crule}[3][black]{\textcolor{#1}{\rule{#2}{#3}}} % Define the \crule command
 \renewcommand{\arraystretch}{0.5}
-
-\definecolor{BXH}{RGB}{208, 140, 212}
-\definecolor{BXHC}{RGB}{218, 150, 222}
-\definecolor{UDU}{RGB}{230, 230, 230}
-\definecolor{IGB}{RGB}{200, 200, 200}
-\definecolor{IGP}{RGB}{128, 0, 128}
-\definecolor{IGBM}{RGB}{170, 170, 170}
-\definecolor{UPX}{RGB}{140, 140, 140}
-\definecolor{UPXO}{RGB}{140, 140, 140}
-\definecolor{UKO}{RGB}{176, 245, 184}
-\definecolor{VTU}{RGB}{0, 160, 18}
-\definecolor{MVO}{RGB}{0, 120, 0}
-\definecolor{VBA}{RGB}{0, 90, 0}
-\definecolor{VMO}{RGB}{0, 120, 0}
-\definecolor{VFO}{RGB}{178, 255, 104}
-\definecolor{SAK}{RGB}{255, 174, 0}
-\definecolor{SAN}{RGB}{255, 225, 140}
-\definecolor{MSC}{RGB}{150, 140, 140}
-\definecolor{MPHB}{RGB}{110, 190, 255}
-\definecolor{MPH}{RGB}{139, 241, 255}
-\definecolor{SOO}{RGB}{139, 241, 255}
-\definecolor{VOO}{RGB}{0, 200, 0}
-\definecolor{OVB}{RGB}{255, 255, 0}
 
 \begin{document}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|c|c|l|c|}\hline
+\begin{tabular}{|c|c|l|c|}
+\hline
  & Code & Description & Susceptibility \\ \hline
-\crule[OVB]{0.25cm}{0.25cm} & OVB & Overburden & Medium \\ \hline
-\crule[IGB]{0.25cm}{0.25cm} & IGB &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/OVB.png} & OVB & Overburden & Medium \\ \hline
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/IGB.png} & IGB &
 \begin{tabular}{l}
 IGB: Gabbro \\
 IPG: Pegmatite \\
-IGBO: Olivine gabbro\\
+IGBO: Olivine gabbro \\
 IDI: Diorite \\
 IDB: Diabase \\
-IMO: Intrusive (mafic)\\
+IMO: Intrusive (mafic) \\
 IGBM: Magnetite gabbro
-\end{tabular} & \begin{tabular}{c} \\ Medium \\ \\ \\ \\ \\ \hline High \end{tabular} \\ \hline
-\crule[UPX]{0.25cm}{0.25cm}& UPX &
+\end{tabular} &
+\begin{tabular}{c} \\ Medium \\ \\ \\ \\ \\ \hline High \end{tabular} \\ \hline
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/UPX.png} & UPX &
 \begin{tabular}{l}
 UPXO: Olivine peroxinite \\
-UOO: Ultramafic (Undiff.)\\
+UOO: Ultramafic (Undiff.) \\
 MPE: Metaperidotite \\
-UWB: Websterite \\
+UWB: Websterite
 \end{tabular} & Medium \\ \hline
-\crule[UDU]{0.25cm}{0.25cm}& UDU &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/UDU.png} & UDU &
 \begin{tabular}{l}
 UDU: Dunite \\
-UPE: Peridotite \\
+UPE: Peridotite
 \end{tabular} & High \\ \hline
-\crule[UKO]{0.25cm}{0.25cm} & UKO & Komatiite & High \\ \hline
-\crule[BXH]{0.25cm}{0.25cm} & BXH & \begin{tabular}{l}BXO (undiff.) \\ BXHC: Hydrothermal (crackle)\end{tabular} & Medium \\ \hline
-\crule[SOO]{0.25cm}{0.25cm}& SOO &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/UKO.png} & UKO & Komatiite & High \\ \hline
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/BXH.png} & BXH &
+\begin{tabular}{l}
+BXO (undiff.) \\
+BXHC: Hydrothermal (crackle)
+\end{tabular} & Medium \\ \hline
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/SOO.png} & SOO &
 \begin{tabular}{l}
 MAB: Albitite \\
-MAM: Amphibolite\\
+MAM: Amphibolite \\
 MQZ: Quartzite \\
-MSCSD: Schist \\
+MSCSD: Schist
 \end{tabular} & Low \\ \hline
-\crule[MPHB]{0.25cm}{0.25cm}& MPH &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/MPHB.png} & MPH &
 \begin{tabular}{l}
 MPH: Phyllite \\
 MPHB: Black Phyllite \\
 MSCBK: Black Schist \\
-MHF: Hornfels \\
+MHF: Hornfels
 \end{tabular} & Low \\ \hline
-\crule[VMO]{0.25cm}{0.25cm}& MVS &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/VMO.png} & MVS &
 \begin{tabular}{l}
 VMO: Volcanic Mafic \\
-VBA: Basalt\\
-VTUM: Volcanic tuff \\
+VBA: Basalt \\
+VTUM: Volcanic tuff
 \end{tabular} & Low \\ \hline
-\crule[VOO]{0.25cm}{0.25cm}& VIO &
+
+\includegraphics[width=0.25cm,height=0.25cm]{Tables/patches/VOO.png} & VIO &
 \begin{tabular}{l}
 VIO: Volcanic Intermediate \\
 VTUI: Volcanic tuff \\
 VAN: Andesite \\
-VOO: Volcanic (undiff.) \\
+VOO: Volcanic (undiff.)
 \end{tabular} & Medium \\ \hline
+
 \end{tabular}
 \end{table}
 
-
 \end{document}
-
-

@@ -23,16 +23,16 @@ project:
   doi: 10.1190/geo2019-0244.1
   # arxiv: ARXIV
   # github: GITHUB-URL
-  date: 2020/03/19 # date of publication
+  date: 2020-03-19 # date of publication
   # license: CC-BY-4.0  # uncomment this and the line below if open access
   # open_access: true
   venue:
     title: Geophysics
     url: https://library.seg.org/doi/10.1190/geo2019-0244.1
   history:
-    received: 2019/04/24
-    accepted: 2020/01/11
-    published: 2020/03/19
+    received: 2019-04-24
+    accepted: 2020-01-11
+    published: 2020-03-19
   keywords:
     - 3D
     - inversion
